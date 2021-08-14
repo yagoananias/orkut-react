@@ -2,11 +2,13 @@ import MainGrid from '../src/componentes/MainGrid';
 import Box from '../src/componentes/Box';
 
 export default function Home() {
+  const githubUser = 'yagoananias'
+
   return (
     <MainGrid>
       <div className="profileArea" style={{ gridArea: 'profileArea' }}>
         <Box>
-          <img src="https://github.com/yagoananias.png" />
+          <img src={`https://github.com/${githubUser}.png`} style={{ borderRadius: '8px' }} />
         </Box>
       </div>
       <div className="welcomeArea" style={{ gridArea: 'welcomeArea' }}>
